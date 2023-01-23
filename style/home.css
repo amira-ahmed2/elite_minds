@@ -75,7 +75,9 @@ header {
   color: var(--orang) !important;
 
 }
-
+.fontSize{
+  font-size: 0.77rem!important;
+}
 .bgorangeInline {
   border: 1px solid var(--orang) !important;
   color: var(--orang) !important;
@@ -94,11 +96,16 @@ header {
 }
 
 .trans>h1 {
-  font-size: 387%;
+  font-size: 370%;
 }
 
 .borderwarning {
   border: 1px solid var(--light) !important;
+
+
+}
+.borderwarning2 {
+  border: 4px solid var(--orang) !important;
 
 
 }
