@@ -18,56 +18,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
     crossorigin="anonymous"></script>
-<style>
-  .carousel-container {
-  /* margin: 50px auto; */
-  position: relative;
+    <link rel="stylesheet" href="./slider/style.css">
 
-}
-
-.inner-carousel {
-  width: 100%;
-  /* height: 400px; */
-  overflow: hidden;
-}
-.track {
-  display: inline-flex;
-  height: 100%;
-  transition: transform 0.2s ease-in-out;
-}
-.card-container {
-  width: 275px;
-  /* height: 400px; */
-  flex-shrink: 0;
-  padding-right: 10px;
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;*/
-  background-position: center bottom;
-  background-size: center;
-  background-repeat: no-repeat;
-  border: 0 !important;
-}
-
-.navs .prev {
-  /* left: -30px; */
-  display: none;
-}
-.navs .prev.show {
-  display: block;
-}
-.navs .next {
-}
-.navs .next.hide {
-  display: none;
-}
-</style>
 </head>
 
 <body>
@@ -171,78 +123,86 @@
               </div>
             </div>
       <!-- slider books -->
-      <div class="d-flex col-12 mt-5 d-flex justify-content-center align-items-center flex-column mt-5 pt-5">
-        <div class="col-12 d-flex justify-content-center align-items-center  ">
-            <div class=" col-2 navs ">
-                <img src="./images/Vector 5.png"  alt=".0." class="prev" >
-            </div>
-            <div class="col-8 d-flex justify-content-start align-items-start carousel-container ">
-              <div class="inner-carousel">
-                <div class="track">
-                  <div class="col-12 d-flex justify-content-start align-items-start carousel-container ">
-                    <div class="card-container">
-                      <div class="  col-3 card" >
-                        <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top w-100" alt=".0.">
-                      
-                      </div>            </div>
-                    <div class="card-container">
-                      <div class="  col-3 card" >
-                        <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top w-100" alt=".0.">
-                      
-                      </div>            
-                    </div>
-                    <div class="card-container">
-                      <div class="  col-3 card" >
-                        <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top w-100" alt=".0.">
-                      
-                      </div>            
-                    </div>
-                    <div class="card-container">
-                      <div class="  col-3 card" >
-                        <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top w-100" alt=".0.">
-                      
-                      </div>            
-                    </div>
-                    <div class="card-container">
-                      <div class="  col-3 card" >
-                        <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top w-100" alt=".0.">
-                      
-                      </div>            
-                    </div>
-                    <div class="card-container">
-                      <div class=" col-3 card" >
-                        <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top w-100" alt=".0.">
-                      
-                      </div>            
-                    </div>
-                    <div class="card-container">
-                      <div class="  col-3 card" >
-                        <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top w-100 " alt=".0.">
-                      
-                      </div>            
-                    </div>
-                    <div class="card-container">
-                      <div class=" col-3 card" >
-                        <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top w-100" alt=".0.">
-                      
-                      </div>            
-                    </div>
-                    <div class="card-container">
-                      <div class="  col-3 card" >
-                        <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top w-100" alt=".0.">
-                      
-                      </div>            
-                    </div>
-                  </div>  
-                </div></div></div>
-             
-            <div class=" col-2 navs text-end">
-                 <img src="./images/Vector 6.png"  alt=".0." class="next" >
+      <div class="d-flex col-12 mt-5 d-flex justify-content-center align-items-center flex-column  "
+      id="featureContainer">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class=" col-1 navs  d-md-block d-none">
+          <img src="../images/Vector 5.png" alt=".0." class="w-aut indicator" href="#featureCarousel" role="button" data-bs-slide="prev" >
+        </div>
+
+        <div  class="col-md-10 col-12 d-flex justify-content-center align-items-center  row mx-auto my-auto justify-content-center">
+          <div id="featureCarousel" class="carousel slide col-12 d-flex" data-bs-ride="carousel">
+
+          
+
+            <div class="col-12 row d-flex justify-content-start align-items-start carousel-container carousel-inner"
+              role="listbox">
+              <div class=" carousel-item active ">
+                <div class="  col-md-3 col-12 ">
+                  <div class=" ">
+                   <div class="  ">
+                     <img src="./images/ebook-pmi-pba exam shadi 1.png" class="card-img-top " alt=".0.">
+                     <div class="card-body text-center mt-3">
+                       <p class="Roboto textGrey fw-bold   ">Book Name here</p>
+                       <p class="Roboto textGrey fw-lighter  ">29.99$</p>
+                     </div>
+       
+                   </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="  col-md-3 col-12">
+                 <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top " alt=".0.">
+
+
+                </div>
+              </div>
+              <div class="carousel-item ">
+               <div class="  col-md-3 col-12">
+                <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top " alt=".0.">
+
+
+               </div>
+             </div>
+             <div class="carousel-item ">
+               <div class="  col-md-3 col-12">
+                <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top " alt=".0.">
+
+
+               </div>
+             </div>
+             <div class="carousel-item ">
+               <div class="  col-md-3 col-12">
+                <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top " alt=".0.">
+
+
+               </div>
+             </div>
+             <div class="carousel-item ">
+               <div class="  col-md-3 col-12">
+                <img src="./images/ebook-pmi-pba exam shadi 3.png" class="card-img-top " alt=".0.">
+
+
+               </div>
+             </div>
             </div>
 
-        </div> 
-     
+            
+          </div>
+        </div>
+
+        <div class=" col-1 navs text-end d-md-block d-none">
+          <img src="../images/Vector 6.png" alt=".0."  class="w-aut indicator" href="#featureCarousel" role="button" data-bs-slide="next">
+        </div>
+
       </div>
+      <a href="./blogs.html" class="btn bgorangeInline  text-center Roboto  px-5 pt-2 my-5 ">Explore all E-Books</a>
+
+    </div>
         </div>
       
 
@@ -298,6 +258,6 @@
   </section>
 
 </body>
-<script src="/script/slider.js"></script>
+<script src="/slider/script.js"></script>
 
 </html>
